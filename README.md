@@ -72,14 +72,8 @@ run_app.bat
 source-name_alpha.png
 ```
 
-## 打包为 EXE
 
-```powershell
-python -m pip install -r requirements-dev.txt
-pyinstaller --noconfirm --windowed --onefile --name FrameCutter frame_cutter_gui.py
-```
-
-Windows 用户也可以双击：
+Windows 用户可以双击：
 
 ```text
 build_exe.bat
@@ -112,11 +106,6 @@ python -m py_compile frame_cutter_gui.py
 
 目前项目是单文件桌面工具，核心逻辑集中在 `FrameCutterApp` 中。欢迎提交更稳定的识别算法、测试样例、跨平台打包配置和界面改进。
 
-## 发布到 GitHub 前建议
-
-- 不要提交 `.venv/`、`build/`、`dist/`、`*.spec` 等本地或打包产物。
-- 如果要发布 EXE，建议通过 GitHub Releases 上传 `dist/FrameCutter.exe`，不要直接提交到仓库。
-- 如果 README 中要展示效果图，可以把截图放入 `docs/` 或 `assets/` 目录。
 
 ## 许可证
 
